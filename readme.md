@@ -50,6 +50,14 @@ featuring comprehensive validation, smart retry mechanisms, and Allure reporting
 
 ---
 
+## Attachments
+
+- You can view or download the [API Testing Guide] and [Web Testing Guide]
+- [Web_Automation_Framework_Documentation.pdf](https://github.com/user-attachments/files/19619276/Web_Automation_Framework_Documentation.pdf)
+[API_Framework_Documentation.pdf.pdf](https://github.com/user-attachments/files/19619275/API_Framework_Documentation.pdf.pdf)
+
+---
+
 ## Setup
 
 1. **Clone Repository**
@@ -57,3 +65,4 @@ featuring comprehensive validation, smart retry mechanisms, and Allure reporting
 ```bash
 git clone https://github.com/your-repo/automation-framework.git
 cd automation-framework
+
