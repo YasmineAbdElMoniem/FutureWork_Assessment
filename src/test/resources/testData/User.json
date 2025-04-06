@@ -1,0 +1,36 @@
+{
+  "checkValidations" : {
+    "name" : "h",
+    "phone" : "554455987",
+    "city" : "Jeddah",
+    "email" : "t%^tt.com",
+    "password" : "123",
+    "confirmPassword" : "12",
+    "validationMessages" : {
+      "name" : "Invalid name - the name must contain 3-100 characters only",
+      "phone" : "Invalid phone number format",
+      "city" : "Please Choose The City",
+      "email" : "Invalid Email",
+      "password" : "The password must contain minimum 8 characters, one upper case English letter, one lower case English letter, one number and one special character",
+      "confirmPassword" : "Confirm password mismatch"
+    }
+  },
+  "checkSignInPageIsOpened" : {
+    "name" : "hjvhvv",
+    "phone" : "966554455987",
+    "city" : "Jeddah",
+    "email" : "tttt@tt.com",
+    "password" : "Test@123",
+    "confirmPassword" : "Test@123",
+    "expectedEmailError" : "Email Already Existing"
+  },
+  "checkAccountCreation" : {
+    "name" : "Test",
+    "phone" : "966554455987",
+    "city" : "Jeddah",
+    "email" : "edmundo.rolfson@gmail.com",
+    "password" : "Test@123",
+    "confirmPassword" : "Test@123",
+    "successMessage" : "Account created successfully"
+  }
+}

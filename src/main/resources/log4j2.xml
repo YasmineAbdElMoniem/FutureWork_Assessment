@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File Appender for API Automation Logs -->
+        <File name="ApiFileLogger" fileName="logs/api-automation.log" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c - %m%n"/>
+        </File>
+
+        <!-- File Appender for Web Test Logs -->
+        <File name="WebFileLogger" fileName="logs/web-automation.log" createOnDemand="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c - %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger for general logging -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ApiFileLogger"/>
+            <AppenderRef ref="WebFileLogger"/>
+        </Root>
+
+        <!-- Logger for Web Test specific logs -->
+        <Logger name="com.futurework.partner.webtestcases" level="info">
+            <AppenderRef ref="WebFileLogger"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Logger for API Test specific logs (unchanged from your original setup) -->
+        <Logger name="com.futurework.partner.apitestCases" level="info">
+            <AppenderRef ref="ApiFileLogger"/>
+            <AppenderRef ref="Console"/>
+        </Logger>
+    </Loggers>
+</Configuration>
